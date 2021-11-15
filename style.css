@@ -1,0 +1,128 @@
+/* bütün elementler için gecerli olsun -> (*) */
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* tıklamadan önce */
+#aL:link {
+    color: red;
+  }
+  
+  /* tıklandıktan sonra */
+#aL:visited {
+    color: green;
+  }
+  
+  /* üzerine gelindiğinde */
+#aL:hover {
+    color: hotpink;
+  }
+  
+  /* tıklandığında */
+#aL:active {
+    color: blue;
+  }
+
+/* bütün div'ler için */
+div {
+    font-size: 20px;
+}
+
+/* CSS NEDİR */
+#div1{
+background-color:rgb(252, 143, 0) ;
+color: rgb(75, 97, 84);
+border: darkblue 3px double;
+display:flex;
+justify-content: center;
+}
+
+/* yanyana div gelsin */
+#div2, #div3{
+ display: inline-flex;
+}
+
+/* görünmez yapan seçenekler */
+#div4{
+    /* display: none;
+    opacity: 0; */
+    visibility: hidden;
+}
+
+#div5{
+    margin: 5px 5px 15px 5px;
+    padding: 15px 4px 2px 1px;
+}
+
+/* bütün div classları */
+.div{
+    background-color: rgb(248, 120, 120) !important;
+    
+}
+
+/* hareket halinde kare */
+#kare{
+    right: 100px;
+    padding: 20px;
+    border:rgb(0, 0, 0) 2px solid;
+    background-color: rgb(241, 255, 44) ;
+    position: fixed;
+    z-index: -1;
+}
+
+/* html adlı classa sahip tüm elemanların önüne */
+.html::before{
+    content: "HTML >>> " ;
+}
+/* üzerine gelindiğinde */
+.html:hover{
+    color:red;
+    font-style: italic;
+    transition: 1s ease;
+}
+
+
+@keyframes  renkDegis{
+    from { background-color: red }
+    to { background-color:skyblue;}
+}
+/* animasyon */
+#p1{
+    font-size: 30px;
+    animation-name: renkDegis;
+    animation-duration: 25s;
+}
+
+#p2{
+    text-transform: uppercase;
+}
+
+.meyveler{
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+/* scroll içine almak */
+#divMeyve{
+    overflow: scroll;
+    width: 150px;
+    height: 150px;
+    background-color: slateblue;
+}
+
+#table{
+    font-family: cursive;
+    border-collapse:collapse;
+}
+#table td, #table th{
+    border: 2px slateblue solid;
+    padding: 4px;
+}
+#table tr:hover {
+    background-color: rgba(107, 86, 240, 0.61);
+}
+#table td{
+    text-align: center;
+}
+
